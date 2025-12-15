@@ -1,0 +1,2 @@
+O PID do nosso carrinho funciona através de valores que corrigem os erros e ajudam o carrinho a fazer curvas.
+Ele utiliza os termos Proporcional, Integral e Derivativo para ajustar a velocidade dos motores, reduzindo desvios, suavizando movimentos e mantendo o carrinho estável e preciso no trajeto.

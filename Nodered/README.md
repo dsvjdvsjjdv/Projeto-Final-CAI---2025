@@ -1,0 +1,2 @@
+Para importar o fluxo voce deve ir ate os tres retangulos no canto da tela de cima na direita e apertar,e entao voce deve ir em exportar e vai aparecer uma tela pequena e tem uma parte escrito exportar nós,do lado tem uma parte escrito json,voce aperta nele e copia tudo o que tem nele.
+os pacotes que precisam ser instalados são da Dashboard 2.0 e os topicos que precisam ser usados sao NovaFuture/esp32/Enviar para voce receber as coisas que o carrinho esta mandando e o NovaFuture/esp32/Receber para voce enviar algo como um botao ou outra coisa pata o carrinho receber.

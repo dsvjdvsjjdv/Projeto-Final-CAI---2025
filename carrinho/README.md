@@ -1,0 +1,1 @@
+Esse código faz o nosso carrinho semiautonomo enviar e receber informações e interpreta-las da maneira correta, o "coração" e "cérebro" do projeto.

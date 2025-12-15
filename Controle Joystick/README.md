@@ -1,0 +1,3 @@
+O nosso controle JoyStick ele é responsável por controlar nosso carrinho de forma física. Ele funciona através de um código que recebe a direção para qual o analogico está pressionado e indica as direções que ele deve seguir (para coverter os valores dos eixos nós usamos uma biblioteca que facilita o uso do JoyStick, que se chama: JoyStickLib).
+Para usar, você precisa de um JoyStick e adicionar a biblioteca JoyStickLib, depois que você enviar o código para o Esp você deve apertar o botão de reset no Esp, se não ele não irá enviar as informações (apertar o botão de reset até receber algo além de simbolos).
+\\!AVISO!\\ CERTIFIQUE-SE QUE OS FIOS ESTÃO BEM ENCAIXADOs.
