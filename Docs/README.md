@@ -1,12 +1,19 @@
 O Nosso projeto é um carrinho semiautonomo ligado ao serviço de nuvem AWS com Dashboard e Aplicativo
 Nós finalizamos: Controle fisico(JoyStick) e digital(Aplicativo), ler a temperatura dos 4 motores e a distancia em tempo real (mostrando tudo na Dashboard), realizamos a comunicação MQTT, desenvolvemos também o aplicativo no MIT App, nós estruturamos os dados de envio em JSON
+
 Nós fizemos: Comunicação(MQTT): Foi uma comunicação entre o nosso carrinho e a rede, MQTT é um protocolo leve de comunicação baseado em publish/subscribe, muito usado em IoT. Dispositivos enviam e recebem dados por um broker, de forma rápida e eficiente; Hardware: Usamos um Esp32 que é um microcontrolador de alto desempenho que controla todos os dispositivos atrelados ao carrinho(Seria uma versão melhorada do Arduino), 4 rodas omindirecionais, um botão incoder, utilizamos também um Display, um botão para ligar e desligar o carrinho, seguidor de linha(PID), sensor de distância, LED's e 4 motores; Fluxos: nós fizemos também o Node Red(uma ferramenta de programação visual baseada em fluxos) e o nosso objetivo é monitorar o status do carrinho(suas temperaturas) e controlar seu modo de funcionamento, essas informações são recebidas por via mqtt,nos tratamos com functions(que são funções) e fazemos com que elas passem por gráficos para que mostrem na nossa Dashboard(Um painel de controle);
+
 Inicialmente, planejamos que o nosso carrinho service para funcionar tanto na natureza quanto na área residencial, atuando no auxilio de cuidados animais;
+
 Faltou fazer o DYNAMO(banco de dados),RFID(Sensor para ler cartão/chips) e o Display;
+
 O RFID infelizmente não funcionou, pois ele não lia o cartão, o que provavelmente podia ser um erro no código ou podia ser algo no próprio sensor, e por alguma razão quando acrescentava ele no nosso código, ele implicava com o outras coisas que não faziam sentido no código e não funcionava;
+
 Precisariamos aprimorar a junção de códigos, o modo de envio (pois ele envia tudo a cada um segundo, achamos melhor que ele enviasse toda vez que tivesse uma alteração), aprimorar o recebimento de erros do JoyStick e melhorar a conexão do MIT (permitindo que apenas uma pessoa conecte por vez);
+
 Para testar/executar: Primeiro verifique se as rodas estão em X (se as linhas prestas das rodas formarem um X, elas estão corretas), segundo veja se na sua pasta de conexão com a internet se o nome e a senha estão corretos, terceiro verifique se na serial aparece a palavra "CONECTADO!", se não aparecer, verifique se os certificados coincidissem com os certificados corretos (ver se não são de outro certificados) e na dashboard escolha o modo de funcionamento(o 0 é "repouso", o 1 é o JoyStick e o 2 é no App);
- Os integrantes e oque cada um fez
+
+Os integrantes e oque cada um fez
 Gustavo   - PID,Criou o código principal,Junção do código
 Gabriel   - Motores,MIT
 Heloiza   - Direção das rodas,PID,Temperatura, Setas
